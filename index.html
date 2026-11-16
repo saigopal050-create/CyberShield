@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080f1c">
+  <title>CyberShield | Digital Safety</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon">⬡</span>
+      Cyber<span>Shield</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#tools">Tools</a>
+      <a href="#academy">Academy</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          YOUR DIGITAL SAFETY PARTNER
+        </div>
+
+        <h1>Stay Safe in the<br>
+          <span>Digital World.</span>
+        </h1>
+
+        <p>
+          Explore cybersecurity tools, understand online threats
+          and build smarter digital habits.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#tools" class="btn primary">Explore Tools ↗</a>
+          <a href="#academy" class="btn secondary">Start Learning</a>
+        </div>
+
+        <div class="hero-note">
+          🛡️ Protect yourself. Think before you click.
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="glow-circle"></div>
+        <div class="shield">
+          <span>⬡</span>
+          <small>SECURE</small>
+        </div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="floating-tag tag-one">● SYSTEM AWARENESS</div>
+        <div class="floating-tag tag-two">✦ STAY PROTECTED</div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-box">
+        <strong>04</strong>
+        <span>Smart Tools</span>
+      </div>
+      <div class="stat-box">
+        <strong>100%</strong>
+        <span>Learning Focus</span>
+      </div>
+      <div class="stat-box">
+        <strong>24/7</strong>
+        <span>Stay Alert</span>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="section" id="tools">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CYBERSHIELD FEATURES</span>
+          <h2>Explore Your <span>Tools.</span></h2>
+          <p>Everything you need to improve your cyber awareness.</p>
+        </div>
+        <span class="section-number">01 / TOOLS</span>
+      </div>
+
+      <div class="tool-grid">
+
+        <article class="tool-card">
+          <div class="card-top">
+            <div class="tool-icon">⌕</div>
+            <span class="card-number">01</span>
+          </div>
+          <h3>Website Risk Scanner</h3>
+          <p>Examine website addresses for suspicious indicators.</p>
+          <a href="#scanner" class="card-link">Open Scanner ↗</a>
+        </article>
+
+        <article class="tool-card">
+          <div class="card-top">
+            <div class="tool-icon">🔐</div>
+            <span class="card-number">02</span>
+          </div>
+          <h3>Password Checker</h3>
+          <p>Understand password strength and better security habits.</p>
+          <a href="#password" class="card-link">Check Password ↗</a>
+        </article>
+
+        <article class="tool-card">
+          <div class="card-top">
+            <div class="tool-icon">🧠</div>
+            <span class="card-number">03</span>
+          </div>
+          <h3>Cyber Quiz</h3>
+          <p>Challenge your knowledge of online safety.</p>
+          <a href="#quiz" class="card-link">Take Quiz ↗</a>
+        </article>
+
+        <article class="tool-card">
+          <div class="card-top">
+            <div class="tool-icon">📚</div>
+            <span class="card-number">04</span>
+          </div>
+          <h3>Cyber Academy</h3>
+          <p>Learn about phishing, malware, privacy and protection.</p>
+          <a href="#academy" class="card-link">Start Learning ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SCANNER -->
+    <section class="section feature-section" id="scanner">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TOOL 01 / URL ANALYSIS</span>
+          <h2>Website <span>Risk Scanner.</span></h2>
+          <p>Check a website address for common warning signs.</p>
+        </div>
+      </div>
+
+      <div class="interactive-box">
+        <label for="urlInput">ENTER WEBSITE ADDRESS</label>
+        <div class="input-row">
+          <input id="urlInput" type="text"
+            placeholder="https://example.com">
+          <button class="btn primary" id="scanBtn">Analyse ↗</button>
+        </div>
+        <p class="small-note">
+          Educational indicator check only. It cannot confirm whether
+          a website is safe or malicious.
+        </p>
+        <div id="scanResult" class="result"></div>
+      </div>
+    </section>
+
+    <!-- PASSWORD -->
+    <section class="section feature-section" id="password">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TOOL 02 / PASSWORD SECURITY</span>
+          <h2>Password <span>Checker.</span></h2>
+          <p>Learn what makes a password stronger.</p>
+        </div>
+      </div>
+
+      <div class="interactive-box">
+        <label for="passwordInput">TRY A SAMPLE PASSWORD</label>
+        <div class="input-row">
+          <input id="passwordInput" type="password"
+            placeholder="Enter a sample password">
+          <button class="btn primary" id="checkPassword">Check</button>
+        </div>
+
+        <div class="strength-track">
+          <div id="strengthBar"></div>
+        </div>
+        <h3 id="strengthText">Strength: Not checked</h3>
+        <div id="passwordTips" class="tips"></div>
+        <p class="small-note">
+          Use a sample only, not your real password. This checker
+          works locally and does not send or save what you type.
+        </p>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="section feature-section" id="quiz">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TOOL 03 / TEST YOUR KNOWLEDGE</span>
+          <h2>Cyber <span>Quiz.</span></h2>
+          <p>How much do you know about cybersecurity?</p>
+        </div>
+      </div>
+
+      <div class="interactive-box quiz-box">
+        <div class="quiz-top">
+          <span id="questionCount">QUESTION 1 / 5</span>
+          <span id="quizScore">SCORE: 0</span>
+        </div>
+
+        <div class="progress-track">
+          <div id="quizProgress"></div>
+        </div>
+
+        <h3 id="question">Loading question...</h3>
+        <div id="answers" class="answers"></div>
+        <p id="quizFeedback" class="feedback"></p>
+        <button id="nextQuestion" class="btn primary" disabled>
+          Next Question →
+        </button>
+      </div>
+    </section>
+
+    <!-- ACADEMY -->
+    <section class="section" id="academy">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TOOL 04 / KNOWLEDGE CENTRE</span>
+          <h2>Cyber <span>Academy.</span></h2>
+          <p>Knowledge is your first line of digital defence.</p>
+        </div>
+        <span class="section-number">02 / LEARN</span>
+      </div>
+
+      <div class="academy-grid">
+        <article class="lesson">
+          <span class="lesson-icon">🎣</span>
+          <h3>Phishing</h3>
+          <p>Learn how deceptive messages try to trick people into sharing information.</p>
+        </article>
+
+        <article class="lesson">
+          <span class="lesson-icon">🦠</span>
+          <h3>Malware</h3>
+          <p>Understand harmful software and how to reduce your risk.</p>
+        </article>
+
+        <article class="lesson">
+          <span class="lesson-icon">🔒</span>
+          <h3>Online Privacy</h3>
+          <p>Discover ways to protect personal information online.</p>
+        </article>
+
+        <article class="lesson">
+          <span class="lesson-icon">🛡️</span>
+          <h3>Safe Browsing</h3>
+          <p>Build habits that help you browse the internet more safely.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="awareness" id="about">
+      <span class="eyebrow">STAY INFORMED</span>
+      <h2>Think Before<br><span>You Click.</span></h2>
+      <p>
+        One careless click can put your digital privacy at risk.
+        Stay alert, stay informed and make safer choices online.
+      </p>
+      <a href="#tools" class="btn primary">Explore CyberShield ↗</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="#home" class="brand">
+      <span class="brand-icon">⬡</span>
+      Cyber<span>Shield</span>
+    </a>
+    <p>Building a safer and smarter digital world.</p>
+    <small>© 2026 CyberShield | Educational Project</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
